@@ -1,113 +1,97 @@
-body{
-font-family:Arial,sans-serif;
-text-align:center;
-background:#f4fffc;
-margin:0;
-padding:20px;
+/* 1. Global Reset & Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #dffcf7, #b8fff1, #8ce6d8);
+    color: #1f3b3a;
+    scroll-behavior: smooth;
+    text-align: center;
 }
 
-h1{
-color:#0f8b8d;
-}
-
-a{
-background:#0f8b8d;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-border-radius:20px;
-}
-.profile-pic{
-  width:250px;
-  height:250px;
-  border-radius:50%;
-  object-fit:cover;
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-.gallery{
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-.gallery img{
-  width:250px;
-  border-radius:15px;
-  transition:0.3s;
-}
-
-.gallery img:hover{
-  transform:scale(1.05);
-}
-body{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#dffcf7,#b8fff1,#8ce6d8);
-    color:#1f3b3a;
-    scroll-behavior:smooth;
-}
-
-nav{
-    background:rgba(255,255,255,0.2);
-    backdrop-filter:blur(10px);
-    padding:15px;
-    position:sticky;
-    top:0;
-}
-
+/* 2. Hero Section (Welcome Screen) */
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 40px 20px;
-    min-height: auto;
+    width: 100%;
+    height: 100vh; /* Forces the hero block to perfectly fill the screen height */
+    box-sizing: border-box;
+    padding: 20px;
 }
 
+/* 3. Profile Picture Styling */
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
 
-.card{
-    background:rgba(255,255,255,0.25);
-    backdrop-filter:blur(15px);
-    border-radius:20px;
-    padding:20px;
-    margin:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+/* 4. Typography styling */
+h1 {
+    color: #0f8b8d;
+    font-size: 2.5rem;
+    margin: 10px 0;
 }
 
-.gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
+h2 {
+    color: #0f8b8d;
+    margin-top: 30px;
 }
 
-.gallery img{
-    width:250px;
-    border-radius:20px;
-    transition:0.4s;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+/* 5. About Me & Contact Card */
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
+/* 6. Buttons & Links */
+a, .btn {
+    display: inline-block;
+    background-color: #0f8b8d;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
 }
 
-.btn{
-    background:#0f8b8d;
-    color:white;
-    padding:12px 25px;
-    border-radius:30px;
-    text-decoration:none;
+a:hover, .btn:hover {
+    background-color: #0c6f71;
+}
+
+/* 7. Gallery Section */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
