@@ -17,3 +17,95 @@ padding:10px 20px;
 text-decoration:none;
 border-radius:20px;
 }
+.profile-pic{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.gallery{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.gallery img{
+  width:250px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#dffcf7,#b8fff1,#8ce6d8);
+    color:#1f3b3a;
+    scroll-behavior:smooth;
+}
+
+nav{
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card{
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:20px;
+    margin:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.gallery img{
+    width:250px;
+    border-radius:20px;
+    transition:0.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.btn{
+    background:#0f8b8d;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+}
